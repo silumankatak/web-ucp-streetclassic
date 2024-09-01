@@ -1,0 +1,209 @@
+/* Resetting and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1c1c1c; /* Dark background */
+    color: #ffffff; /* White text color */
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #333333; /* Dark grey for navbar */
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #f09821; /* Yellow color for links */
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+/* Main content styling */
+main {
+    padding: 40px 20px;
+}
+
+.container {
+    background-color: #333333; /* Dark grey for container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+.container-content {
+    background-color: #333333; /* Dark grey for container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #f09821; /* Yellow color for headers */
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    color: #ffd700; /* Gold color for sub-headers */
+    margin-bottom: 20px;
+}
+
+p {
+    color: #ffffff; /* White text color */
+    margin-bottom: 20px;
+}
+
+.role {
+    font-weight: bold;
+    color: #f09821; /* Yellow color for role */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table thead {
+    background-color: #444444; /* Dark grey for table header */
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #555555; /* Slightly lighter dark grey for borders */
+    text-align: left;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #2c2c2c; /* Darker grey for odd rows */
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #333333; /* Dark grey for even rows */
+}
+
+/* Button Styling */
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #f09821; /* Yellow color for buttons */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffd700; /* Gold color on hover */
+}
+
+/* Input Styling */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #555555; /* Dark grey for input borders */
+    border-radius: 5px;
+    background-color: #2c2c2c; /* Dark grey for input backgrounds */
+    color: #ffffff; /* White text color */
+    width: 100%;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus {
+    border-color: #f09821; /* Yellow border on focus */
+}
+
+/* Links */
+a {
+    display: block;
+    margin-top: 15px;
+    color: #f09821; /* Yellow color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333333; /* Dark grey for footer */
+    padding: 10px 0;
+    color: #ffffff; /* White text color */
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .container {
+        padding: 15px;
+        max-width: 95%;
+    }
+}
